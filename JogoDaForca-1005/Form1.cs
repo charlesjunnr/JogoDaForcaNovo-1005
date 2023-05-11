@@ -56,12 +56,12 @@ namespace JogoDaForca_1005
             if (ehVitoria)
             {
                 MessageBox.Show($"Parabéns! Você acertou a palavra {forca.palavraSelecionada}");
-                //forca.ResetarJogo();
+                Close();
             }
             else if (forca.JogadorPerdeu())
             {
                 MessageBox.Show($"Você perdeu! A palavra correta é {forca.palavraSelecionada}");
-                //forca.ResetarJogo();
+                Close();
             }
 
         }
